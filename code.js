@@ -1,6 +1,5 @@
 function flip(array, n) {
     var tmp;
-    if (array.length == 1 || array.length == 0) {return array;}
     if (n <= 0) {return array;}
     if (n > array.length) {n = array.length;}
     for (var i = 0; i < (n/2); i++) {
@@ -13,6 +12,7 @@ function flip(array, n) {
 
 // Use only flip() here to manipulate the array
 function pancakeSort(array) {
+    if (array.length == 1 || array.length == 0) {return array;}
     for (var j = 0; j < array.length; j++) {
         var tmpI = 0
         var tmpV = array[0];
