@@ -16,14 +16,14 @@ function pancakeSort(array) {
     for (var j = 0; j < array.length; j++) {
         var tmpI = 0
         var tmpV = array[0];
-        for (var i = 0; i < array.length-j; i ++) {
+        for (var i = 0; i < array.length-j; i++) {
             if (array[tmpI] < array[i]) {
                 tmpI = i;
                 tmpV = array[i];
             }
         }
         flip(array, tmpI+1);
-        flip(array, arr.length-j);
+        flip(array, array.length-j);
     }
     return array;
 }
