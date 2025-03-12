@@ -31,9 +31,10 @@ Add your answer to this markdown file.
 
 For the number of comparisons of pancakes: $T(n) ∈ Θ((n+1)\frac{n^2}{2})$
 
-The comparison occurs within a for loop in a for loop in the pancakeSort function. The first for loop runs $n$ times (it goes from 0 to the length of the array). The inner for loop is more tricky, as the upper limit is decremented for each outer for loop. Thus this loop runs $n$ times for the first loop, $n-1$ times for the second loop, $n-2$ times for the third loop, etc. until the array length is decremented to 0 (last iteration of outer for loop). So the inner loop runs $n + (n-1) + (n-2) + ... + 1$ times. This comes out to $(n+1) \frac{n}{2}$. Multiplying the two for loops together gives $(n+1)\frac{n^2}{2}. 
+The comparison occurs within a for loop in a for loop in the pancakeSort function. The first for loop runs $n$ times (it goes from 0 to the length of the array). The inner for loop is more tricky, as the upper limit is decremented for each outer for loop. Thus this loop runs $n$ times for the first loop, $n-1$ times for the second loop, $n-2$ times for the third loop, etc. until the array length is decremented to 0 (last iteration of outer for loop). So the inner loop runs $n + (n-1) + (n-2) + ... + 1$ times. This comes out to $(n+1) \frac{n}{2}$. Multiplying the two for loops together gives $(n+1)\frac{n^2}{2}$. 
 
 For the number of flips: $T(n) ∈ Θ(2n)$
 
-The flips occur at the end of the outer for loop, not 
+The flips occur at the end of the outer for loop, not hitting any of the inner for loop. The outer for loop runs n times, and the flip function is called twice for each iteration. Thus it is called $2n$ time.
 
+“I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.” - Natalie Sleight
