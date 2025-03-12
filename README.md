@@ -35,6 +35,6 @@ The comparison occurs within a for loop in a for loop in the pancakeSort functio
 
 For the number of flips: $T(n) ∈ Θ(2n)$
 
-The flips occur at the end of the outer for loop, not hitting any of the inner for loop. The outer for loop runs n times, and the flip function is called twice for each iteration. Thus it is called $2n$ time.
+The flips occur at the end of the outer for loop, not hitting any of the inner for loop. The outer for loop runs n times, and the flip function is called twice for each iteration. Thus flip is called $2n$ times.
 
 “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.” - Natalie Sleight
