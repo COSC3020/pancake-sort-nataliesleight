@@ -29,9 +29,9 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons of pancakes? What is it in terms of the number of flips?
 Add your answer to this markdown file.
 
-For the number of comparisons of pancakes: $T(n) ∈ Θ(\frac{n^3}{2})$
+For the number of comparisons of pancakes: $T(n) ∈ Θ(\frac{n^2}{2})$
 
-The comparison occurs within a for loop in a for loop in the pancakeSort function. The first for loop runs $n$ times (it goes from 0 to the length of the array). The inner for loop is more tricky, as the upper limit is decremented for each outer for loop. Thus this inner loop runs $n$ times for the first iteration of the outer loop, $n-1$ times for the second iteration of the outer loop, $n-2$ times for the third iteration of the outer loop, etc. until the array length is decremented to 0 (last iteration of outer for loop). So the inner loop runs $n + (n-1) + (n-2) + ... + 1$ times. This comes out to $(n+1) \frac{n}{2}$. Multiplying the two for loops together gives $(n+1)\frac{n^2}{2}$. This equation simplifies to $\frac{n^3}{2} + \frac{n^2}{2}$. 
+The comparison occurs within a for loop in a for loop in the pancakeSort function. The first for loop runs $n$ times (it goes from 0 to the length of the array). The inner for loop is more tricky, as the upper limit is decremented for each outer for loop. Thus this inner loop runs $n$ times for the first iteration of the outer loop, $n-1$ times for the second iteration of the outer loop, $n-2$ times for the third iteration of the outer loop, etc. until the array length is decremented to 0 (last iteration of outer for loop). So the inner loop runs $n + (n-1) + (n-2) + ... + 1$ times total. This comes out to $(n+1) \frac{n}{2}$. Rewriting this equation gives $\frac{n^2}{2} + \frac{n}{1}$.
 
 For the number of flips: $T(n) ∈ Θ(2n)$
 
